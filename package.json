@@ -1,0 +1,24 @@
+{
+  "name": "learn_rx.js",
+  "version": "1.0.0",
+  "description": "To learn Rx.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SekiguchiKai/learn_rx.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SekiguchiKai/learn_rx.js/issues"
+  },
+  "homepage": "https://github.com/SekiguchiKai/learn_rx.js#readme",
+  "devDependencies": {
+    "rxjs": "^5.4.3",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  }
+}
