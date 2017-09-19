@@ -29,4 +29,5 @@ Temporary Items
 
 .idea/
 .node_modules/
+src/*.js
 
