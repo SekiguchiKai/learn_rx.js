@@ -25,6 +25,7 @@ let observer2 = {
 };
 
 console.log('observer1 subscribed');
+console.log('最初のObserver(observer1)がsubscribeしたので、multicasted Observableの実行が開始された');
 let subscription1 = refCountedmultiCastedObservable.subscribe(observer1);
 
 console.log('observer2 subscribed');
@@ -43,3 +44,7 @@ setTimeout(() => {
         subscription2.unsubscribe();
     }, 100
 );
+
+setTimeout(() => {
+    console.log('最後のObserver(observer2)がunsubscribeしたので、multicasted Observableの実行が停止された');
+}, 100);
