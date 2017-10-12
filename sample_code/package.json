@@ -4,6 +4,7 @@
   "description": "To learn Rx.js.",
   "main": "index.js",
   "scripts": {
+    "build": "tsc ./src/*.ts && mv ./src/*.js ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
