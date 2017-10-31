@@ -1,0 +1,6 @@
+# Operator
+
+## Operatorとは
+Observableのメソッドである。
+ObservableのOperatorが呼び出されると、既存のObservableを元に新しいObservableを生成する。
+その際には、元のObservableは変化しない。新しく生成されたObservableのSubscriptionは、元のObservableを元に生成されている。
