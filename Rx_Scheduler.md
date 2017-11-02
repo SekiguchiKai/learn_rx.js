@@ -48,9 +48,26 @@ Scheduler上でgetterメソッドnow()で、時間の概念を提供する。
 
 引用元 : [RxJSの公式ドキュメント](http://reactivex.io/rxjs/manual/overview.html#scheduler)
 
+## ObserverOn
+> Wraps the source sequence in order to run its observer callbacks on the specified scheduler.
+  This only invokes observer callbacks on a scheduler. 
+  In case the subscription and/or unsubscription actions have side-effects that require to be run on a scheduler, use subscribeOn.
+
+(意訳)
+(ObserverOnは)特定のScheduler上で、Observerのコールバックを実行するために(データの)ソースのシーケンスをラップする(包む)。
+ObserverOnは、Scheduler上でObserverのコールバックを発動させるだけである。
+subscriptionと(や)unsubscriptionのアクションが、Scheduler上で実行される必要があるような副作用を持っている場合は、subscribeOnを使ってください。
+
+
+引用元 : [RxJS/observeon.md at master · Reactive-Extensions/RxJS](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/observeon.md)
+
+
+
+
 ## 関連記事
 [RxJSの基本をまとめてみた~基本的な概念編(Observable、Observer、Subscriptionなど)~ - Qiita](https://qiita.com/Sekky0905/items/93bd4804a2003ed0aa8d)
 [Rxの基本をまとめてみた(コードはRxJS)~Subjectの基本編~ - Qiita](https://qiita.com/Sekky0905/items/a6534da15ce5f18e2c51)
 
 ## 参考にさせていただいたサイト
 [RxJSの公式ドキュメント](http://reactivex.io/rxjs/manual/overview.html#scheduler)
+[RxJS/observeon.md at master · Reactive-Extensions/RxJS](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/api/core/operators/observeon.md)
